@@ -1,0 +1,141 @@
+% LaTeX resume using res.cls
+\documentclass[margin]{res}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font
+\setlength{\textwidth}{5in} % set width of text portion
+\usepackage{color,hyperref}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+\hypersetup{colorlinks,breaklinks,linkcolor=darkblue,urlcolor=darkblue,anchorcolor=darkblue,citecolor=darkblue}
+
+\begin{document}
+
+% Center the name over the entire width of resume:
+\moveleft.5\hoffset\centerline{\large\bf Octav I. Dragoi}
+% Draw a horizontal line the whole width of resume:
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+% address begins here
+% Again, the address lines must be centered over entire width of resume:
+\moveleft.5\hoffset\centerline{Hiltenspergerstrasse 83}
+\moveleft.5\hoffset\centerline{80796 M{\" u}nchen, Deutschland}
+\moveleft.5\hoffset\centerline{+40 720 389 958}
+\moveleft.5\hoffset\centerline{octav.dragoi@gmail.com}
+\moveleft.5\hoffset\centerline{Romanian Citizenship}
+% \moveleft.5\hoffset\centerline{}
+
+\begin{resume}
+  \vspace{16pt}
+
+  \section{EDUCATION}
+  % \sl will be bold italic in New Century Schoolbook (or
+  % any postscript font) and just slanted in
+  %	Computer Modern (default) font
+  {\sl Master of Science\/} \hfill 2018 - 2020 (exp.)\\
+  \textbf{Technische Universit{\"a}t M{\"u}nchen, Munich, Germany} \\
+  {\sl Program\/}: Data Engineering and Analytics. \\
+  {\sl Grade\/}: 1.431.
+  \vspace{-6pt}
+
+  {\sl Coursework\/}: Foundations of Data Engineering, Nonlinear Optimization: Advanced,
+  Introduction to Deep Learning.
+
+  {\sl Bachelor of Arts\/} \hfill 2012 - 2016\\
+  \textbf{Harvard College, Cambridge, MA} \\
+  {\sl Concentration\/}: Mathematics and Computer Science. \\
+  {\sl Secondary Field\/}: Economics. \\
+  {\sl Overall GPA\/}: 3.75/4.00  \\
+  {\sl GRE Scores\/}: 163 Verbal, 170 Quant.
+  \vspace{-6pt}
+
+  {\sl Coursework\/}:  Honors Abstract Algebra, Honors Real and Complex Analysis, Differential Topology,
+    Analytic Number Theory, Algebraic Geometry; General Computer Science, Data Structures and
+    Algorithms, Machine Learning, Data Science.
+  \vspace{-6pt}
+
+  {\sl Thesis\/}: \href{http://math.harvard.edu/theses/senior/dragoi/dragoi.pdf}
+  {The Sarnak Conjecture. Orthogonality of the Mobius Function on Bounded Depth Circuits.} \\
+  Explored a result from 2012 proving a particular case of the Sarnak conjecture that links
+  concepts from analytic number theory with abstract computational theory.
+  \vspace{-6pt}
+
+  {\sl High School}\hfill 2008 - 2012 \\
+  \textbf{International Computer Highschool of Bucharest, Romania}\\
+  Valedictorian GPA 10/10.\\
+  SAT Scores: 800 Math, 800 Writing, 750 Reading, 800 Math II, 800 Physics
+  \vspace{8pt}
+
+  \section{AWARDS} \textbf{Putnam Mathematical Competition}
+  \begin{itemize} \itemsep -2pt
+    \item 10\textsuperscript{th} in 2012, in the N1 niche of the national rankings.
+    \item Honorable Mentions in 2013 and 2014.
+  \end{itemize}
+  \textbf{International Mathematical Olympiad}
+  \begin{itemize} \itemsep -1pt
+    \item Gold Medal in 2011, Amsterdam, the Netherlands.
+    \item Silver Medal in 2012, Mar del Plata, Argentina.
+  \end{itemize}
+  \textbf{Balkan Mathematical Olympiad}
+  \begin{itemize} \itemsep -1pt
+    \item Gold Medal in 2010, Chisinau, Moldova.
+    \item Gold Medal in 2011, Iasi, Romania.
+    \item Gold Medal in 2012, Antalya, Turkey.
+  \end{itemize}
+  \newpage
+
+  \section{EXPERIENCE}
+  {\sl Algorithmic Trader} \hfill Summer 2016 - Fall 2018 \\
+  \textbf{Jump Trading LLC, New York, NY} \\
+  A quantitative, proprietary trading company and registered market maker.
+  \begin{itemize}  \itemsep -2pt %reduce space between items
+    \item Part of a team of 8 people trading equities worldwide.
+      Studying statistical properties of market data and implementing black-box
+      trading algorithms.
+    \item Created a framework that improves the entire team's performance by 20\%. Designed and
+      researched several new trading strategies. Implemented several essential components and features
+      for the trading platform.
+    \item Working on the full process pipeline: feature design, data analysis,
+      phenomenon modeling, algorithm implementation, production code maintenance
+      and efficientization. All work done in a Linux environment.
+    \item Besides the proprietary research framework, the toolkit includes Python and R
+      for data analysis (\texttt{pandas}, \texttt{data.table}), machine learning (\texttt{xgboost})
+      and distributed computation (\texttt{OpenMPI}), as well as C++ development tools
+      (\texttt{valgrind}, \texttt{GDB}).
+  \end{itemize}
+
+
+  {\sl Quantitative Summer Analyst} \hfill Summer 2015 \\
+  \textbf{D.E. Shaw \& Co., New York, NY} \\
+  A large hedge fund, well known for employing quantitative strategies.
+  \begin{itemize}  \itemsep -2pt %reduce space between items
+    \item Studied trend filtering methods and models
+      that remove short-term noise and retain only the long-term significant movements.
+      Developed new methods and compared them with already existing ones.
+    \item Implemented a Python package of the aforementioned theoretical models
+      and researched its practical predictive power on timeseries of market data.
+  \end{itemize}
+
+  {\sl Summer Analyst Intern} \hfill Summer 2014 \\
+  \textbf{Ellington Management Group LLC, Old Greenwich, CT} \\
+  A Connecticut-based hedge fund focused on trading mortgage-based securities.
+  Worked in two separate departments, statistical arbitrage and research.
+  \begin{itemize} \itemsep -2pt
+    \item Focused on creating higher frequency stat-arb signals.
+      Did statistical analysis and data mining on intraday order book data for index ETFs.
+    \item Worked on an agent-based housing market model, meant to reproduce and explain the
+      subprime mortgage crisis associated with the Great Recession.
+  \end{itemize}
+
+  \section{EXTRA-CURRICULAR \\ ACTIVITIES} Member of the Harvard Financial Analysts Club.
+    \hfill Fall 2012 - Spring 2016 \\
+  Regular Course Assistant of the Math Department. \hfill Fall 2013 - Spring 2016 \\
+  Member of the Harvard $\Sigma$AE fraternity. \hfill Spring 2013 - Spring 2016 \\
+  Faculty member of AwesomeMath Summer Camp. \hfill Summer 2012
+  \begin{itemize} \itemsep -2pt
+    \item Took place in Santa Cruz, CA. Held lectures for a class with 40 students,
+      also designed tests and team contest problems. \\
+  \end{itemize}
+
+  \section{COMPUTER \\ \& LANGUAGE \\ SKILLS} {\sl Programming:\/} Python, C++, R, bash, \LaTeX  \\
+  {\sl Languages:\/} Romanian (native), English (proficient), French, Russian, German (conversational).
+
+\end{resume}
+\end{document}
